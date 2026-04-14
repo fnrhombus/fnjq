@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Workspace root for fnjq",
+  "scripts": {
+    "build": "pnpm --filter fnjq build",
+    "test": "pnpm --filter fnjq-tests test",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "packageManager": "pnpm@10.17.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
